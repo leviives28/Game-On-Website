@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Nicholson Ives">
+    <meta name="publication_date" content="2023-10-09">
+    <meta name="last_modified" content="2023-10-14">
+    <meta name="geo.region" content="GB">
+    <meta name="geo.position" content="50.85152449571398;0.49769921432493813">
+    <meta name="ICBM" content="50.85152449571398, 0.49769921432493813">
+    <meta name="description" content="Game On Mobile Gaming Van - Gallery - Van Experience">
+    <title>Game On Mobile Gaming - Gallery</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <div id="logoContainer">
+                <a href="https://gameonmobilegaming.co.uk"><img id="logo" src="/imgs/logo.png" alt="Game On Mobile Gaming Events Logo"></a>
+            </div>
+            <div class="headings centerAligned">
+                <h1 id="companyHeading" class="fitContent">GAME ON</h1>
+                <h2 id="companySubHeading" class="fitContent">MOBILE GAMING</h2>
+            </div>
+            <div id="menu-btn" class="centerAligned" onclick="expand_menu_page('Gallery')">
+                <button id="menuButton" class="cursorPointer" onclick="expand_menu_page('Homepage')">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div id="gallery" class="main">
+        <div class="galleryHeading">
+            <h3 class="centered pageTitle">Gallery</h3>
+        </div>
+        <div class="gallery">
+            <div class="galleryItem marginBottom centered">
+                <img class="galleryImage" src="/imgs/van1.jpeg" alt="Gaming Van Interior">
+            </div>
+            <div class="galleryItem marginBottom centered">
+                <img class="galleryImage" src="/imgs/party1.jpeg" alt="Kids Gaming Party Event">
+            </div>
+            <div class="galleryItem marginBottom centered">
+                <img class="galleryImage" src="/imgs/party4.jpg" alt="Gaming Van Exterior">
+            </div>
+            <div class="galleryItem marginBottom centered">
+                <img class="galleryImage" src="/imgs/van3.jpeg" alt="Kids Gaming Party Event" >
+            </div>
+        </div>
+        <div class="traversalButtons">
+            <button onclick="previous_page()" id="buttons"><a href="#top" class="links">&larr;</a></button>
+            <p id="pageOptionsElement" class="fitContent">Page <span id="currentPage"></span> of <span id="totalPages"></span></p>
+            <button onclick="next_page()" id="buttons" ><a href="#top" class="links">&rarr;</a></button>
+        </div>
+    </div>
+    <script src="/script.js">
+    </script>
+    <footer>
+        <button id="contactButton"><a href="/Contact.html" class="links">Contact</a></button>
+    </footer>
+</body>
+</html>

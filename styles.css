@@ -1,0 +1,828 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/satisfy/v21/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    max-width: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #FFF;
+    margin: 0px;
+    font-family: 'Roboto Mono', monospace, sans-serif, serif;
+    padding: 0px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    max-width:3.2rem;
+    margin: 15px;
+}
+
+.centerAligned {
+    align-self: center;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+.fitContent {
+    max-width: fit-content;
+}
+
+#companyHeading {
+    font-size: 1rem;
+    justify-self: center;
+    margin: 0 auto;
+}
+
+#companySubHeading {
+    font-size: 0.7rem;
+    margin: 0 auto;
+}
+
+#menu-btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 3.2rem;
+    height: 20px;
+    justify-content: center;
+}
+
+#menuButton {
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    min-height: 50%;
+    min-width: 50%;
+}
+
+.cursorPointer {
+    cursor: pointer;
+}
+
+.btn-line {
+    width: 100%;
+    height: 2px;
+    background: #3640FF;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+}
+
+#banner {
+    background-image: url("./imgs/banner2.png");
+    height: 120px;
+    background-size: cover;
+    background-position: 0% 50%;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+.bannerTitle {
+    margin: 0 auto;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.bannerParagraph {
+    margin: 0 auto;
+    font-size: 12px;
+    max-width: 60%;
+}
+
+.subheading {
+    font-size: 1rem;
+    margin: 30px auto 0 auto;
+}
+
+.infoParagraph {
+    margin: 30px auto 0 auto;
+    width: 80%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+.locationsHeading h3 {
+    font-size: initial;
+    margin-bottom: 25px;
+}
+
+.locations {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+
+#locations {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    font-size: 12px;
+}
+
+#locations h4 {
+    margin-top: 35px;
+    font-size: 14px;
+}
+
+#imagePanel {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+#aboutUs ul {
+    margin: 25px 0px;
+}
+
+#aboutUs ul li {
+    font-size: 13px;
+}
+
+#locations ul {
+    padding-left: 20px;
+    margin-bottom: 35px;
+}
+
+li {
+    margin: 7.5px 0;
+}
+
+#imagePanel img {
+    max-width: 31%;
+}
+
+#terms {
+    margin: 30px 10px 0 7.5%;
+}
+
+#terms h3 {
+    font-size: initial;
+}
+
+#contactButton {
+    margin: 5%;
+    background-color: #3640FF;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contactButton a {
+    padding: 10px;
+}
+
+.indented {
+    margin: 7.5% 0 0 7.5%;
+}
+
+.termsIntro {
+    font-size: 13px;
+}
+
+.faqs div {
+    width: 90%;
+}
+
+.faqs div h4 {
+    font-size: 15px;
+}
+
+.faqs div p {
+    color: rgb(219, 219, 219);
+    border-bottom: 1px solid rgb(85, 85, 85);
+    padding-bottom: 2.5%;
+    letter-spacing: 0.05rem;
+}
+
+#aboutUs {
+    margin: 7.5%;
+}
+
+.aboutUsHeading {
+    margin: 0 auto 10% auto;
+}
+
+.aboutImage {
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
+}
+
+.aboutImage img {
+    max-width: 100%;
+}
+
+.closingParagraph {
+    margin-top: 10%;
+}
+
+.contact div {
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+}
+
+.contact div img {
+    max-width: 35px;
+    min-width: 30px;
+}
+
+.contact p a {
+    margin-left: 10px;
+}
+
+#menu {
+    max-width: 80%;
+    margin: 30px auto;
+}
+
+
+.menuItem {
+    margin-bottom: 20px;
+}
+
+.galleryHeading h3 {
+    margin: 20px 0px 30px 0px;
+}
+
+.galleryImage {
+    max-width: 70%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.marginBottom {
+    margin-bottom: 10%;
+}
+
+.traversalButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+#buttons {
+    height: max-content;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 5px;
+    border: none;
+}
+
+.smallPara {
+    font-family: Arial, Helvetica, serif;
+    font-size: 13px;
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.linkUnderlined {
+    color: white;
+}
+
+#backToTopButton {
+    margin: 5%;
+    background-color: #3640FF;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: inherit;
+    float: right;
+}
+
+#backToTopButton a {
+    padding: 10px;
+}
+
+#terms div p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(219, 219, 219);
+    letter-spacing: 0.05rem;
+    padding-bottom: 2.5%;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+#backToTopButton {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+}
+
+.websiteTerms {
+    margin-top: 35px;
+}
+
+
+#homepageFacebookLink img {
+    max-width: 7%;
+    min-width: 7%;
+}
+
+#homepageFacebookLink {
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+
+@media only screen and (min-width: 500px) {
+    #banner {
+        min-height: 200px;
+    }
+
+    #companyHeading {
+        font-size: 1.2rem;
+    }
+
+    #companySubHeading {
+        font-size: 1.1rem;
+    }
+
+    .contactHidden {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #logo {
+        max-width: 4.3rem;
+    }
+
+    #menu-btn {
+        max-width: 4.3rem;
+    }
+
+    #banner {
+        margin-top: 25px;
+        min-height: 225px;
+    }
+
+    #companyHeading {
+        font-size: 1.3rem;
+    }
+
+    #companySubHeading {
+        font-size: 1.2rem;
+    }
+
+    .bannerTitle {
+        font-size: 1.7rem;
+        padding: 0px 20px;
+    }
+
+    .bannerParagraph {
+        font-size: 1.1rem;
+    }
+
+    .subheading {
+        margin-top: 50px;
+        font-size: 1.3rem;
+    }
+
+    .infoParagraph {
+        margin-top: 50px;
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    #imagePanel {
+        margin-top: 100px;
+    }
+
+    #contactButton {
+        padding: 7.5px;
+        bottom: 0px;
+    }
+
+    #contactButton a {
+        font-size: 1rem;
+    }
+
+    #backToTopButton {
+        padding: 7.5px;
+        bottom: 0px;
+    }
+
+    #backToTopButton a {
+        font-size: 1rem;
+    }
+
+    #imagePanel img {
+        max-width: 25%;
+    }
+
+    .traversalButtons {
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #banner {
+        min-height: 250px;
+    }
+
+    .galleryImage {
+        max-width: 60%;
+    }
+
+    .bannerTitle {
+        font-size: 1.85rem;
+    }
+
+    .subheading {
+        margin-top: 50px;
+        font-size: 1.5rem;
+    }
+
+    .infoParagraph {
+        margin-top: 50px;
+        width: 70%;
+        font-size: 1.3rem;
+    }
+
+    #imagePanel {
+        margin-top: 100px;
+    }
+
+    #buttons a {
+        font-size: 1.5rem;
+    }
+
+    #pageOptionsElement {
+        font-size: 1.2rem;
+    }
+
+    #aboutUs ul {
+        margin: 40px 10% 60px 7.5%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #logo {
+        min-width: 4.4rem;
+    }
+
+    #menu-btn {
+        min-width: 4.4rem;
+    }
+
+    #banner {
+        min-height: 275px;
+    }
+
+    .bannerTitle {
+        font-size: 2.3rem;
+    }
+
+    .bannerParagraph {
+        font-size: 1rem;
+    }
+
+    #imagePanel img {
+        max-width: 20%;
+    }
+
+    .menuItem {
+        font-size: 25px;
+    }
+
+    #buttons a {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #banner {
+        min-height: 300px;
+	background-position: 0% 50%;
+    }
+
+    #buttons a {
+        font-size: 2.75rem;
+    }
+
+    .bannerParagraph {
+        font-size: 1.3rem;
+    }
+
+    .pageTitle {
+        font-size: 1.4rem;
+    }
+
+    .locationsHeading h3 {
+        font-size: 1.4rem;
+    }
+
+    .locations p {
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.05rem;
+    }
+
+    #locations h4 {
+        margin-top: 55px;
+        font-size: 17px;
+    }
+
+    #locations ul {
+        font-size: 15px;
+        margin-bottom: 55px;
+    }
+
+    .locations li {
+        margin: 2.5px;
+    }
+
+    .galleryHeading h3 {
+        margin-bottom: 55px;
+    }
+
+    #terms h3 {
+        font-size: 1.3rem;
+    }
+
+    .marginBottom {
+        margin-bottom: 5%;
+    }
+
+    #aboutUs {
+        margin-top: 55px;
+    }
+
+    .aboutUsHeading {
+        margin-bottom: 55px;
+    }
+
+    .openingParagraph p {
+        padding: 0 20px;
+    }
+
+    .closingParagraph p {
+        padding: 0 20px;
+    }
+
+    .aboutImage {
+        width: 60%;
+    }
+
+    #aboutUs ul {
+        margin: 40px 10% 60px 10%;
+    }
+
+    #aboutUs ul li {
+        font-size: 16px;
+    }
+
+    #aboutUs p {
+        font-size: 18px;
+    }
+
+    #homepageFacebookLink img {
+        max-width: 4%;
+        min-width: 4%;
+    }
+
+    #homepageFacebookLink {
+        margin-left: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #banner {
+        min-height: 325px;
+    }
+
+    #logo {
+        min-width: 3.3rem;
+    }
+
+    #menu {
+        margin: 70px 0px 0px 3.5%;
+    }
+
+    #menu-btn {
+        min-width: 3.3rem;
+    }
+
+    #contactButton {
+        margin: 2.5%
+    }
+
+    #backToTopButton {
+        margin: 2.5%;
+    }
+
+    #terms div.termsHeading {
+        margin-bottom: 2.5%;
+    }
+
+    .websiteTerms {
+        width: 95%;
+    }
+
+    .businessTerms {
+        width: 95%;
+        margin-bottom: 7.5%;
+    }
+
+    .marginBottom {
+        margin-bottom: 5%;
+    }
+
+    #terms {
+        margin-top: 55px;
+    }
+
+    .indented {
+        margin-top: 55px;
+    }
+
+    #locations {
+        margin-top: 55px;
+        margin-left: 7.5%;
+    }
+
+    #buttons a {
+        font-size: 3rem;
+    }
+
+    #aboutUs {
+        margin-top: 55px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #banner {
+        min-height: 350px;
+    }
+
+    #logo {
+        min-width: 3.4rem;
+    }
+
+    #menu-btn {
+        min-width: 3.4rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #banner {
+        min-height: 375px;
+    }
+
+    #aboutUs ul {
+        margin: 40px 10% 60px 20%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #banner {
+        min-height: 400px;
+    }
+
+    #pageOptionsElement {
+        font-size: 1.4rem;
+    }
+
+    #homepageFacebookLink img {
+        max-width: 3%;
+        min-width: 3%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #banner {
+        min-height: 425px;
+    }
+
+    #logo {
+        min-width: 3.6rem;
+    }
+
+    #menu-btn {
+        min-width: 3.6rem;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .btn-line {
+        height: 4px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .galleryItem {
+        width: 50%;
+    }
+    
+    .galleryImage {
+        min-width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #banner {
+        min-height: 450px;
+    }
+
+    #logo {
+        min-width: 3.65rem;
+    }
+
+    #menu-btn {
+        min-width: 3.65rem;
+    }
+
+    #aboutUs ul {
+        margin: 40px 10% 60px 30%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #banner {
+        min-height: 475px;
+    }
+
+    #logo {
+        min-width: 3.9rem;
+    }
+
+    #menu-btn {
+        min-width: 3.9rem;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    #banner {
+        min-height: 500px;
+    }
+
+    #logo {
+        min-width: 4.1rem;
+    }
+
+    #menu-btn {
+        min-width: 4.1rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #banner {
+        min-height: 525px;
+    }
+
+    #logo {
+        min-width: 4.4rem;
+    }
+
+    #menu-btn {
+        min-width: 4.4rem;
+    }
+}
