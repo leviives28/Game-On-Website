@@ -1,0 +1,4 @@
+/* Copyright (C) Levi Nicholson Ives, Inc - All Rights Reserved
+ * Unauthorized copying, reuse, sharing, distribution of this file, via any medium is strictly prohibited
+ * Written by Levi Nicholson Ives <levi1197@hotmail.co.uk>, November 2023
+ */
